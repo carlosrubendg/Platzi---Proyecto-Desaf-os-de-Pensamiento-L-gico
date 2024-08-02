@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Proyecto: Desafíos de Pensamiento Lógico</title>
+</head>
+<body>
+  <script>
+    // Imprime los números que dividen al argumento
+
+    function divisores(n) {
+      let divisores = [];
+
+      for (let i = 1; i <= n; i++)
+        if (n % i === 0)
+          divisores.push(i);
+
+      return console.log(divisores);
+    }
+
+    let n = prompt('Ingresa un número: ');
+    divisores(n);
+  </script>
+</body>
+</html>
